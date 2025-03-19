@@ -1,0 +1,48 @@
+{
+  "FSB_CATEGORIA_EERR_PPTO": {
+    "structure": [
+      {
+        "name": "COD",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "description": null
+      },
+      {
+        "name": "NAME",
+        "data_type": "nvarchar",
+        "max_length": 200,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "description": null
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "description": null
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "description": null
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "description": null
+      }
+    ],
+    "record_count": 9,
+    "has_sample_data": true,
+    "sample_data": [
+      

@@ -1,0 +1,4869 @@
+{
+  "FSB_ACOMERCIALCLIENTEABAS50069": {
+    "name": "FSB_ACOMERCIALCLIENTEABAS50069",
+    "description": null,
+    "columns": [
+      {
+        "name": "ACCOUNTNUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CARRIERID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "METAM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALORM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TIPOPRODUCTOID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_ACOMERCIALCLIENTETIPO50070": {
+    "name": "FSB_ACOMERCIALCLIENTETIPO50070",
+    "description": null,
+    "columns": [
+      {
+        "name": "ACCOUNTNUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DESCRIPCIONACOMERCIAL",
+        "data_type": "nvarchar",
+        "max_length": 200,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ACTIPOCAMBIOID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_ACOMERCIALCLIENTETIPO50071": {
+    "name": "FSB_ACOMERCIALCLIENTETIPO50071",
+    "description": null,
+    "columns": [
+      {
+        "name": "ACCOUNTNUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CURRENCY",
+        "data_type": "nvarchar",
+        "max_length": 6,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FROMDATE",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TODATE",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "UNITID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ITEMID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ACTIPOCAMBIOID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_ACOMERCIALCLIENTETIPO50072": {
+    "name": "FSB_ACOMERCIALCLIENTETIPO50072",
+    "description": null,
+    "columns": [
+      {
+        "name": "ACCOUNTNUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FROMDATE",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TODATE",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CURRENCYCODE",
+        "data_type": "nvarchar",
+        "max_length": 6,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "EXCHRATE",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ACTIPOCAMBIOID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_ACOMERCIALPROVEEDORAB50073": {
+    "name": "FSB_ACOMERCIALPROVEEDORAB50073",
+    "description": null,
+    "columns": [
+      {
+        "name": "ACCOUNTNUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CARRIERID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "METAM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALORM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUETO",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTSITEIDISSUETO",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_ADMINISTRATIVEDOCUMENTS": {
+    "name": "FSB_ADMINISTRATIVEDOCUMENTS",
+    "description": null,
+    "columns": [
+      {
+        "name": "FSB_FECHADERECEPCION",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FSB_FECHADELDOCUMENTO",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FSB_NUMERODEDOCUMENTO",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ACCOUNTNUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SALESBALANCE",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SUMTAX",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FSB_FECHAENVIOCONTABILIDAD",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FSB_FECHAENVIORESPALDOS",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FSB_FECHAENVIOTESORERIA",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FSB_AREAENVIO",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DOCUMENTTYPE",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FSB_ESTADODOCUMENTO",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "MODIFIEDDATETIME",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "MODIFIEDBY",
+        "data_type": "nvarchar",
+        "max_length": 10,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CREATEDDATETIME",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CREATEDBY",
+        "data_type": "nvarchar",
+        "max_length": 10,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FSB_MANTARDE",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "BSN_IVA",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "BSN_MONTOTOTAL",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "BSN_HASXML",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "BSN_FACTURACOMPRASIITIPO",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_CATEGORIA": {
+    "name": "FSB_CATEGORIA",
+    "description": null,
+    "columns": [
+      {
+        "name": "COD_CATEGORIA",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NOMBRECATEGORIA",
+        "data_type": "nvarchar",
+        "max_length": 80,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_CATEGORIA_EERR_PPTO": {
+    "name": "FSB_CATEGORIA_EERR_PPTO",
+    "description": null,
+    "columns": [
+      {
+        "name": "COD",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NAME",
+        "data_type": "nvarchar",
+        "max_length": 200,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_CEPILLADORAMOLDURA": {
+    "name": "FSB_CEPILLADORAMOLDURA",
+    "description": null,
+    "columns": [
+      {
+        "name": "PRODUNITID",
+        "data_type": "nvarchar",
+        "max_length": 24,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ITEMID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ITEMNAME",
+        "data_type": "nvarchar",
+        "max_length": 400,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VELOCIDAD",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "LINENUM",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_COSTOMATERIAPRIMA": {
+    "name": "FSB_COSTOMATERIAPRIMA",
+    "description": null,
+    "columns": [
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_COSTOOPERACIONAL": {
+    "name": "FSB_COSTOOPERACIONAL",
+    "description": null,
+    "columns": [
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_COSTOSEXPLOTACION": {
+    "name": "FSB_COSTOSEXPLOTACION",
+    "description": null,
+    "columns": [
+      {
+        "name": "PREDIOID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FECHA",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TIPOPRODUCTOID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALORM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DESPACHO",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ACCOUNTNUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_COSTOSEXPLOTACIONCARGUIO": {
+    "name": "FSB_COSTOSEXPLOTACIONCARGUIO",
+    "description": null,
+    "columns": [
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CARGUIOM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CODIGO",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_COSTOSEXPLOTACIONCOSECHA": {
+    "name": "FSB_COSTOSEXPLOTACIONCOSECHA",
+    "description": null,
+    "columns": [
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "COSECHAM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CODIGO",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_COSTOSEXPLOTACIONFLETE": {
+    "name": "FSB_COSTOSEXPLOTACIONFLETE",
+    "description": null,
+    "columns": [
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CARRIERID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FLETEM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_COSTOSEXPLOTACIONINDI50078": {
+    "name": "FSB_COSTOSEXPLOTACIONINDI50078",
+    "description": null,
+    "columns": [
+      {
+        "name": "DIMENSION",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DIMENSION2_",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALORM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_CREDITOS": {
+    "name": "FSB_CREDITOS",
+    "description": null,
+    "columns": [
+      {
+        "name": "COD",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": true,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DESCRIP",
+        "data_type": "nvarchar",
+        "max_length": 200,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNTCAPITALINICIAL",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TRANSDATEBEGIN",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TRANSDATEEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ACCOUNTID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": true,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNTTASAINTERES",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TIPO",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": true,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CHECKCANCELADO",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CHECKPAE",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_CREDITOS_ALMACENES": {
+    "name": "FSB_CREDITOS_ALMACENES",
+    "description": null,
+    "columns": [
+      {
+        "name": "COD",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_CREDITOS_DETALLE": {
+    "name": "FSB_CREDITOS_DETALLE",
+    "description": null,
+    "columns": [
+      {
+        "name": "COD",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": true,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TRANSDATEBEGIN",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": true,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNTPRINCIPAL",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNTINTERES",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNTOTROSCARGOS",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ACCOUNTID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": true,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CUOTA",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": true,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": true,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CHECKPAGO",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_CUADROBASICOUNIDADDEP50056": {
+    "name": "FSB_CUADROBASICOUNIDADDEP50056",
+    "description": null,
+    "columns": [
+      {
+        "name": "EMPLID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PRODUNITID",
+        "data_type": "nvarchar",
+        "max_length": 24,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "MCTURNID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TRANSDATE",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_DEPARTAMENTO": {
+    "name": "FSB_DEPARTAMENTO",
+    "description": null,
+    "columns": [
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_DETALLE_TURNO": {
+    "name": "FSB_DETALLE_TURNO",
+    "description": null,
+    "columns": [
+      {
+        "name": "MCTURNID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_DETALLE_UNIDADPRODUCTIVA": {
+    "name": "FSB_DETALLE_UNIDADPRODUCTIVA",
+    "description": null,
+    "columns": [
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PRODUNITID",
+        "data_type": "nvarchar",
+        "max_length": 24,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_DETALLETARJETAEXISTENCIA": {
+    "name": "FSB_DETALLETARJETAEXISTENCIA",
+    "description": null,
+    "columns": [
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "UNIDPRODNAME",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "UNITID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "COSTOPROMEDIOMESANTERIOR",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "COSTOPRODUCCION",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PRECIOCOMPRATERCEROS",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "COSTOPROMEDIOPONDERADO",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTARIOINICIAL",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VENTASDELINVENTARIO",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TRANSFERENCIAS",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SALDOINVENTARIOINICIAL",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "UNIDADESPROCESADAS",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "COMPRASTERCEROS",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VENTADEPROCESADAS",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TRASLADOS",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "MERMASPALILLOSTACOS",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_DETALLEUNIDADPRODUCTIVA": {
+    "name": "FSB_DETALLEUNIDADPRODUCTIVA",
+    "description": null,
+    "columns": [
+      {
+        "name": "UNIDPRODID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "UNIDPRODNAME",
+        "data_type": "nvarchar",
+        "max_length": 200,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "UNIDPRODDIMENSION",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "UNIDPRODDIMENSION2_",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "UNIDPRODDIMENSION3_",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "UNIDPRODSITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_DISTRIBUCIONPORDEPART50063": {
+    "name": "FSB_DISTRIBUCIONPORDEPART50063",
+    "description": null,
+    "columns": [
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FROMDIMENSION",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FROMDIMENSION2_",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FROMDIMENSION3_",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALUE",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_DISTRIBUCIONPORDEPARTASIGN": {
+    "name": "FSB_DISTRIBUCIONPORDEPARTASIGN",
+    "description": null,
+    "columns": [
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FROMDIMENSION",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FROMDIMENSION2_",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FROMDIMENSION3_",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALUE",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_DISTRIBUCIONPORPLANTA": {
+    "name": "FSB_DISTRIBUCIONPORPLANTA",
+    "description": null,
+    "columns": [
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALUE",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_DISTRIBUCIONPORPLANTA50066": {
+    "name": "FSB_DISTRIBUCIONPORPLANTA50066",
+    "description": null,
+    "columns": [
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALUE",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_EERR_PPTO": {
+    "name": "FSB_EERR_PPTO",
+    "description": null,
+    "columns": [
+      {
+        "name": "COD",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_EERR_PPTO_DETALLE": {
+    "name": "FSB_EERR_PPTO_DETALLE",
+    "description": null,
+    "columns": [
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "COD",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_HORASMAQUINA": {
+    "name": "FSB_HORASMAQUINA",
+    "description": null,
+    "columns": [
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_INSUMO": {
+    "name": "FSB_INSUMO",
+    "description": null,
+    "columns": [
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_INVERSIONES": {
+    "name": "FSB_INVERSIONES",
+    "description": null,
+    "columns": [
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_LEDGERJOURTABLE_CREDI50098": {
+    "name": "FSB_LEDGERJOURTABLE_CREDI50098",
+    "description": null,
+    "columns": [
+      {
+        "name": "COD",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "JOURNALNUM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CUOTA",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_LEDGERJOURTABLE_CREDITOS": {
+    "name": "FSB_LEDGERJOURTABLE_CREDITOS",
+    "description": null,
+    "columns": [
+      {
+        "name": "JOURNALNUM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "COD",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_MANOOBRA": {
+    "name": "FSB_MANOOBRA",
+    "description": null,
+    "columns": [
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_META": {
+    "name": "FSB_META",
+    "description": null,
+    "columns": [
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_PLANTA": {
+    "name": "FSB_PLANTA",
+    "description": null,
+    "columns": [
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_PRECIOPREDIO": {
+    "name": "FSB_PRECIOPREDIO",
+    "description": null,
+    "columns": [
+      {
+        "name": "TRANSDATE",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ITEMID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "COSTPRICE",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "LINENUM",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTSITEIDISSUETO",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUETO",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_PRECIOROLLIZOPPDESDEC50079": {
+    "name": "FSB_PRECIOROLLIZOPPDESDEC50079",
+    "description": null,
+    "columns": [
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALORM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TIPOPRODUCTOID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "METAM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_PRODUCCIONUNIDAD": {
+    "name": "FSB_PRODUCCIONUNIDAD",
+    "description": null,
+    "columns": [
+      {
+        "name": "PRODUNITID",
+        "data_type": "nvarchar",
+        "max_length": 24,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "MCTURNID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TRANSDATE",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_RENDIMIENTO": {
+    "name": "FSB_RENDIMIENTO",
+    "description": null,
+    "columns": [
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNT_META",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNT_TURN",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CODRENDIMEINTO",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_ROLLIZO": {
+    "name": "FSB_ROLLIZO",
+    "description": null,
+    "columns": [
+      {
+        "name": "PREDIOID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FECHA",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TIPOPRODUCTOID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALORM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "COSECHAM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "CARGUIOM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DESPACHO",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "ACCOUNTNUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "FLETEM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "SALESID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_STOCKCANCHAS": {
+    "name": "FSB_STOCKCANCHAS",
+    "description": null,
+    "columns": [
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_STOCKCANCHASHISTORICO": {
+    "name": "FSB_STOCKCANCHASHISTORICO",
+    "description": null,
+    "columns": [
+      {
+        "name": "FROMDATE",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "TODATE",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "VALORM3",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTSITEIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "INVENTLOCATIONIDISSUEFROM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_TARJETAEXISTENCIA": {
+    "name": "FSB_TARJETAEXISTENCIA",
+    "description": null,
+    "columns": [
+      {
+        "name": "COMMENTARIES",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODSTART",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PERIODEND",
+        "data_type": "datetime",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECALCULAR",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_TIPOPRODUCTO": {
+    "name": "FSB_TIPOPRODUCTO",
+    "description": null,
+    "columns": [
+      {
+        "name": "TIPOPRODUCTOID",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": true,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NAME",
+        "data_type": "nvarchar",
+        "max_length": 100,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": true,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_TURNO": {
+    "name": "FSB_TURNO",
+    "description": null,
+    "columns": [
+      {
+        "name": "MCTURNID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_UNIDADPRODUCTIVA": {
+    "name": "FSB_UNIDADPRODUCTIVA",
+    "description": null,
+    "columns": [
+      {
+        "name": "SITEID",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "NUM",
+        "data_type": "nvarchar",
+        "max_length": 40,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "PRODUNITID",
+        "data_type": "nvarchar",
+        "max_length": 24,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  },
+  "FSB_VENTA": {
+    "name": "FSB_VENTA",
+    "description": null,
+    "columns": [
+      {
+        "name": "COD_CATEGORIA",
+        "data_type": "nvarchar",
+        "max_length": 20,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNT",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "AMOUNTMETA",
+        "data_type": "numeric",
+        "max_length": 13,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "DATAAREAID",
+        "data_type": "nvarchar",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECVERSION",
+        "data_type": "int",
+        "max_length": 4,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      },
+      {
+        "name": "RECID",
+        "data_type": "bigint",
+        "max_length": 8,
+        "is_nullable": false,
+        "is_primary_key": false,
+        "is_foreign_key": false,
+        "referenced_table": null,
+        "referenced_column": null,
+        "description": ""
+      }
+    ],
+    "indexes": []
+  }
+}
