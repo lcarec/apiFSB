@@ -29,6 +29,9 @@ class LedgerTransactionViewer:
         # Variable para la empresa seleccionada
         self.selected_company = tk.StringVar(value="FSB")
         
+        # Variable para comprobantes descuadrados
+        self.unbalanced_only = tk.BooleanVar(value=False)
+        
         # Variable para la búsqueda de cuentas
         self.account_search_var = tk.StringVar()
         self.account_search_var.trace('w', self.on_account_search_change)
@@ -46,7 +49,7 @@ class LedgerTransactionViewer:
         filter_frame.grid(row=0, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=5)
         
         # Frame para empresas
-        company_frame = ttk.LabelFrame(filter_frame, text="Empresa", padding="5")
+        company_frame = ttk.LabelFrame(filter_frame, text="Filtros principales", padding="5")
         company_frame.grid(row=0, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=5, padx=5)
         
         # Botones de radio para empresas
@@ -56,6 +59,10 @@ class LedgerTransactionViewer:
                        variable=self.selected_company).grid(row=0, column=1, padx=10)
         ttk.Radiobutton(company_frame, text="FES", value="FES",
                        variable=self.selected_company).grid(row=0, column=2, padx=10)
+        
+        # Checkbox para comprobantes descuadrados
+        ttk.Checkbutton(company_frame, text="Solo comprobantes descuadrados",
+                       variable=self.unbalanced_only).grid(row=0, column=3, padx=20)
         
         # Frame para filtros adicionales
         additional_filters_frame = ttk.Frame(filter_frame)
@@ -70,6 +77,10 @@ class LedgerTransactionViewer:
         self.account_listbox = tk.Listbox(additional_filters_frame, height=5, width=50)
         self.account_listbox.grid(row=1, column=0, columnspan=2, padx=5, pady=2)
         self.account_listbox.grid_remove()  # Inicialmente oculto
+        
+        # Vincular eventos de doble clic y Enter a la lista de cuentas
+        self.account_listbox.bind('<Double-Button-1>', self.on_account_select)
+        self.account_listbox.bind('<Return>', self.on_account_select)
         
         # Filtro de comprobante
         ttk.Label(additional_filters_frame, text="Comprobante:").grid(row=0, column=2, padx=5)
@@ -225,6 +236,14 @@ class LedgerTransactionViewer:
         finally:
             self.db.close()
 
+    def on_account_select(self, event):
+        """Maneja la selección de una cuenta por doble clic o Enter"""
+        selection = self.account_listbox.curselection()
+        if selection:
+            account = self.account_listbox.get(selection[0])
+            self.account_search_var.set(account)
+            self.account_listbox.grid_remove()
+    
     def search_transactions(self):
         """Busca transacciones según las fechas seleccionadas"""
         try:
@@ -264,8 +283,50 @@ class LedgerTransactionViewer:
             if not self.db.connect():
                 raise Exception("No se pudo conectar a la base de datos")
             
-            # Construir la consulta base
-            query = """
+            # Si hay filtro de cuenta, primero obtenemos los comprobantes que la contienen
+            vouchers_with_account = []
+            if account_filter:
+                account_num = account_filter.split(' - ')[0] if ' - ' in account_filter else account_filter
+                account_query = """
+                SELECT DISTINCT lt.VOUCHER
+                FROM LEDGERTRANS lt
+                LEFT JOIN LEDGERTABLE ltb ON lt.ACCOUNTNUM = ltb.ACCOUNTNUM
+                    AND ltb.DATAAREAID = lt.DATAAREAID
+                WHERE lt.DATAAREAID = ?
+                AND CAST(lt.TRANSDATE AS DATE) >= CAST(? AS DATE)
+                AND CAST(lt.TRANSDATE AS DATE) <= CAST(? AS DATE)
+                AND (lt.ACCOUNTNUM LIKE ? OR ltb.ACCOUNTNAME LIKE ?)
+                """
+                account_params = [selected_company, start_date_str, end_date_str,
+                                f"%{account_num}%", f"%{account_filter}%"]
+                vouchers = self.db.execute_query(account_query, tuple(account_params))
+                if vouchers:
+                    vouchers_with_account = [v[0] for v in vouchers]
+                else:
+                    self.status_var.set("No se encontraron transacciones")
+                    return
+            
+            # Construir la consulta base con subconsulta para detectar comprobantes descuadrados
+            if self.unbalanced_only.get():
+                query = """
+                WITH VoucherTotals AS (
+                    SELECT 
+                        VOUCHER,
+                        SUM(CASE WHEN CREDITING = 0 THEN ABS(ROUND(AMOUNTMST, 0)) ELSE 0 END) as TotalDebe,
+                        SUM(CASE WHEN CREDITING = 1 THEN ABS(ROUND(AMOUNTMST, 0)) ELSE 0 END) as TotalHaber
+                    FROM LEDGERTRANS
+                    WHERE DATAAREAID = ?
+                    AND CAST(TRANSDATE AS DATE) >= CAST(? AS DATE)
+                    AND CAST(TRANSDATE AS DATE) <= CAST(? AS DATE)
+                    GROUP BY VOUCHER
+                    HAVING SUM(CASE WHEN CREDITING = 0 THEN ABS(ROUND(AMOUNTMST, 0)) ELSE 0 END) <>
+                           SUM(CASE WHEN CREDITING = 1 THEN ABS(ROUND(AMOUNTMST, 0)) ELSE 0 END)
+                )
+                """
+            else:
+                query = ""
+            
+            query += """
             SELECT 
                 lt.TRANSDATE as Fecha,
                 lt.VOUCHER as Comprobante,
@@ -277,22 +338,31 @@ class LedgerTransactionViewer:
             FROM LEDGERTRANS lt
             LEFT JOIN LEDGERTABLE ltb ON lt.ACCOUNTNUM = ltb.ACCOUNTNUM
                 AND ltb.DATAAREAID = lt.DATAAREAID
+            """
+            
+            if self.unbalanced_only.get():
+                query += " INNER JOIN VoucherTotals vt ON lt.VOUCHER = vt.VOUCHER"
+            
+            query += """
             WHERE CAST(lt.TRANSDATE AS DATE) >= CAST(? AS DATE) 
             AND CAST(lt.TRANSDATE AS DATE) <= CAST(? AS DATE)
             AND lt.DATAAREAID = ?
             """
             
-            params = [start_date_str, end_date_str, selected_company]
+            # Parámetros base
+            params = []
+            if self.unbalanced_only.get():
+                params.extend([selected_company, start_date_str, end_date_str])
+            params.extend([start_date_str, end_date_str, selected_company])
             
             # Agregar filtros adicionales
             if voucher_filter:
                 query += " AND lt.VOUCHER LIKE ?"
                 params.append(f"%{voucher_filter}%")
-            
-            if account_filter:
-                account_num = account_filter.split(' - ')[0] if ' - ' in account_filter else account_filter
-                query += " AND (lt.ACCOUNTNUM LIKE ? OR ltb.ACCOUNTNAME LIKE ?)"
-                params.extend([f"%{account_num}%", f"%{account_filter}%"])
+            elif vouchers_with_account:  # Si estamos filtrando por cuenta
+                placeholders = ','.join(['?' for _ in vouchers_with_account])
+                query += f" AND lt.VOUCHER IN ({placeholders})"
+                params.extend(vouchers_with_account)
             
             # Ordenar primero por comprobante para mantener las transacciones agrupadas
             query += " ORDER BY lt.VOUCHER, lt.TRANSDATE"
