@@ -141,7 +141,7 @@ class LedgerTransactionViewer:
         results_frame.grid(row=1, column=0, columnspan=2, sticky=(tk.W, tk.E, tk.N, tk.S))
         
         # TreeView para mostrar los resultados
-        columns = ("Fecha", "Comprobante", "Cuenta", "Nombre", "Glosa", "Debe", "Haber")
+        columns = ("Fecha", "Comprobante", "Cuenta", "Nombre", "Glosa", "Debe", "Haber", "TipoMov")
         
         self.tree = ttk.Treeview(results_frame, columns=columns, show="headings", height=20)
         
@@ -153,7 +153,8 @@ class LedgerTransactionViewer:
             "Nombre": 250,
             "Glosa": 300,
             "Debe": 120,
-            "Haber": 120
+            "Haber": 120,
+            "TipoMov": 80
         }
         
         column_alignments = {
@@ -163,7 +164,8 @@ class LedgerTransactionViewer:
             "Nombre": "w",
             "Glosa": "w",
             "Debe": "e",
-            "Haber": "e"
+            "Haber": "e",
+            "TipoMov": "center"
         }
         
         # Configurar nombres y propiedades de columnas
@@ -334,7 +336,8 @@ class LedgerTransactionViewer:
                 ltb.ACCOUNTNAME as Nombre,
                 lt.TXT as Glosa,
                 CAST(CASE WHEN lt.CREDITING = 0 THEN ABS(ROUND(lt.AMOUNTMST, 0)) ELSE 0 END AS BIGINT) as Debe,
-                CAST(CASE WHEN lt.CREDITING = 1 THEN ABS(ROUND(lt.AMOUNTMST, 0)) ELSE 0 END AS BIGINT) as Haber
+                CAST(CASE WHEN lt.CREDITING = 1 THEN ABS(ROUND(lt.AMOUNTMST, 0)) ELSE 0 END AS BIGINT) as Haber,
+                lt.PERIODCODE as TipoMov
             FROM LEDGERTRANS lt
             LEFT JOIN LEDGERTABLE ltb ON lt.ACCOUNTNUM = ltb.ACCOUNTNUM
                 AND ltb.DATAAREAID = lt.DATAAREAID
@@ -347,6 +350,7 @@ class LedgerTransactionViewer:
             WHERE CAST(lt.TRANSDATE AS DATE) >= CAST(? AS DATE) 
             AND CAST(lt.TRANSDATE AS DATE) <= CAST(? AS DATE)
             AND lt.DATAAREAID = ?
+            AND lt.PERIODCODE IN (0, 1)
             """
             
             # Parámetros base
@@ -394,6 +398,8 @@ class LedgerTransactionViewer:
                         row_data[j] = value.strftime('%d-%m-%Y')
                     elif isinstance(value, (int, float)) and j in [5, 6]:  # Columnas Debe y Haber
                         row_data[j] = "{:,}".format(abs(int(value))) if value != 0 else "0"
+                    elif j == 7:  # Columna TipoMov
+                        row_data[j] = "Apertura" if value == 0 else "Normal"
                     elif value is None:
                         row_data[j] = '0' if j in [5, 6] else ''
                 
@@ -454,7 +460,8 @@ class LedgerTransactionViewer:
             "",  # Nombre
             "TOTAL COMPROBANTE",  # Glosa
             "{:,}".format(totals['debe']),  # Debe
-            "{:,}".format(totals['haber'])  # Haber
+            "{:,}".format(totals['haber']),  # Haber
+            ""  # TipoMov
         ]
         item_id = self.tree.insert("", tk.END, values=total_row, tags=('total',))
         self.tree.tag_configure('total', background='#f0f0f0', font=('Arial', 9, 'bold'))

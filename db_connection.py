@@ -48,22 +48,32 @@ class SQLServerConnection:
     def execute_query(self, query: str, params: List[Any] = None) -> Optional[List[tuple]]:
         """Ejecuta una consulta SQL con parámetros opcionales"""
         try:
+            if not self.conn or not self.cursor:
+                if not self.connect():
+                    raise Exception("No se pudo establecer la conexión a la base de datos")
+                    
             if params:
                 self.cursor.execute(query, params)
             else:
                 self.cursor.execute(query)
-            return self.cursor.fetchall()
+                
+            results = self.cursor.fetchall()
+            return results
         except pyodbc.Error as e:
-            print(f"Error al ejecutar la consulta: {str(e)}")
+            print(f"Error al ejecutar consulta: {str(e)}")
             return None
-
+            
     def close(self):
-        """Cierra la conexión"""
-        if self.cursor:
-            self.cursor.close()
-        if self.conn:
-            self.conn.close()
-            print("Conexión cerrada.")
+        """Cierra la conexión con la base de datos"""
+        try:
+            if self.cursor:
+                self.cursor.close()
+            if self.conn:
+                self.conn.close()
+            self.cursor = None
+            self.conn = None
+        except pyodbc.Error as e:
+            print(f"Error al cerrar la conexión: {str(e)}")
 
 def main():
     # Configuración de la conexión
